@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: teal;
+    color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: fantasy;
+    background-color: salmon;
+    color: teal;
+    padding: 20px;
+    text-align: center;
+}
+h2 {
+    color: turquoise;
+
+}
+h3 {
+    color: salmon;
+}
+
+a {
+    color: turquoise; 
+    text-decoration: underline; 
+}
+a:visited {
+    color: teal; 
+    text-decoration:line-through;
+}
+a:hover {
+    color: whitesmoke;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: turquoise;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    color: cadetblue;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: dotted;
+}
+nav ul li a:hover {
+    background-color: coral;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
