@@ -1,5 +1,6 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    font-size: 16px;
     background-color: teal;
     color: blanchedalmond;
     margin: 0;
@@ -7,22 +8,60 @@ body {
 }
 
 header {
-    font-family: fantasy;
-    background-color: salmon;
-    color: teal;
+    font-family: 'Indie Flower', fantasy;
+    font-weight: bold;
+    background-image: url('images/bamboopath.jpg');
+    background-size:cover;
+    background-position: center;
+    /* background-color: salmon; */
+    color: lightcoral;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow:rgb(182, 236, 224) 2px 2px 2px;
+    line-height:1.2;
     padding: 20px;
     text-align: center;
+    position: relative;
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(153, 219, 213, 0.304); /* Semi-transparent overlay */
+    z-index: 1; /* Places it above the background image */
+}
+
+header h1, header p, header a {
+    position: relative; /* Ensures text appears above the overlay */
+    z-index: 2;
+}
+h1{
+    color: salmon;
+    font-size: 2.5rem;
+    font-weight:bold;
+    text-shadow: 3px 3px 3px rgb(241, 231, 231);
+    font-family: 'Great Vibes', cursive;
 }
 h2 {
     color: turquoise;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: wavy underline overline teal 2px;
 
 }
 h3 {
-    color: salmon;
+    color: rgb(250, 128, 114);
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2rem;
+    font-weight:bolder;
 }
 
 a {
-    color: turquoise; 
+    color: lightcoral; 
     text-decoration: underline; 
 }
 a:visited {
@@ -37,7 +76,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: turquoise;
+    background-color: rgb(64, 224, 208);
     overflow: hidden;
 }
 nav ul li {
@@ -55,18 +94,47 @@ nav ul li a:hover {
     background-color: coral;
     font-weight: bold;
 }
-
+#about{
+    text-align: center;
+    font-size: 1.2rem;
+    color:lightcoral;
+    padding:20px;
+    border-radius:10px;
+}
+.profile-img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 2px 5px lightcoral;
+}
 section {
     padding: 20px;
     margin-bottom: 20px;
     background-color: black;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 1px 2px 5px salmon;
 }
 
 footer {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Great Vibes', fantasy;
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
+    background-color: black;
+    color: lightcoral;
+}
+.footer-img {
+    width:50px;
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 75%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8rem;
 }
